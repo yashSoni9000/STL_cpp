@@ -1,0 +1,117 @@
+-> stack(dynamic memory allocation)
+1. stack<ele_data_type>name_of_stack;
+2.  .push(ele)/emplace(ele) - will push elements in the stack in LIFO fashion
+3.  .pop() - will pop the element present at the last position
+4.  .top() - will return element present at the top
+5.  .empty() - will check if the stack is empty or not and returns bool values
+6.  .size() -  will return the size of stack.
+7.  stack1.swap(stack2) - will swap elements of two stacks
+
+-> queue(dynamic memory allocation)
+1. queue<ele_data_type>name_of_stack;
+2.  .push(ele)/emplace(ele) - will push elements in the stack in FIFO fashion
+3.  .pop() - will pop the element present at the top
+4.  .front()/.back() - will return element present at first position/last position
+5.  .empty() - will check if the stack is empty or not and returns bool values
+6.  .size() -  will return the size of stack. 
+7.  queue1.swap(queue2) - will swap elements of two queue  
+
+-> priority_queue(dynamic memory allocation)
+1. priority_queue<ele_data_type>name_of_stack;
+2.  .push(ele)/emplace(ele) - will push elements in the stack in FIFO fashion
+3.  .pop() - will pop the element present at the top
+4.  .front() - will return element present at first position
+5.  .empty() - will check if the stack is empty or not and returns bool values
+6.  .size() -  will return the size of stack.   
+
+ --> Vector functions-
+     1.  .push_back(ele) - will push back element into vector at last position.
+         .emplace_back- takes lesser time than push_back when inserting.
+     2.  .pop_back(ele)- will delete the last element from vector.
+     3.  .insert(index,element/s)- for adding elements at a particular position.  
+     4.  .clear() - will claer the contents of vector.
+     5.  .erase(ele)-  for deleting a particular element 
+         .erase(starting point, end point)- for deleting a particular range of elements.
+     6.  .size()- will print the size of array
+     7.  .capacity()- will return the memory allocated for the vector
+     8.  .reference operator [g] – Returns a reference to the element at position ‘g’ in the vector
+     9.  .at(g) – Returns a reference to the element at position ‘g’ in the vector
+    10.  .front() – Returns a reference to the first element in the vector
+    11.  .back() – Returns a reference to the last element in the vector
+    12.  . data() – Returns a direct pointer to the memory array used internally by the vector to store its owned elements.
+    13.  vec1.swap(vec2) - will swap the two vectors irrespective of there size.
+    14.  .reserve(size) - will reserve the memory for vector
+    15.  .assign(int size,int value) - will assign vector the the given value until the given size
+    16.  .assign(start point,end point) - with reference to another array/vector its items can be copied to the given vector 
+    17.  .resize(memory_space_upto which_the vector_is to be resized, default value at new spaces) - it can take only one argument also, here it will either short or incerase the size and assign 0 to new memory
+    18.  sort(intial_pointer/index,last_pointer/index) - ascending ordered sort
+    19.  sort(intial_pointer/index,last_pointer/index, greater<int>()) - descending ordered sort
+    20.  .count(ele) - will return the count of element
+     
+ ->   set/unordered_set functions- 
+   1.   auto it= set.find(ele) - will return pointer at location were ele is present in set
+   In case the ele is not present in the set the it = set.end()
+   2.  .insert() / emplace() - 
+   3.  .erase() - 
+
+ -> multiset - used to store the elements with repetation allowed in a sorted manner by default.
+
+ -> map<key_data_type,ele_data_type> name_of_dict;
+ stores unique key values.
+ map function stores data in sorted fashion of keys. If different values are provided to same keys they will be over writte every time. 
+ functions- 
+ 1.  .emplace(key,ele)
+ 2.  .erase(key/pointer/start-last pointers)
+ 3.  .clear()-
+ 4.  .find(key)-
+ 5.  .empty() - checks whether the dict is empty or not. will return bool
+ 6.  printing of map
+ while printing use iterator- and to print :
+ key- iteratorof->first
+ ele-  iteratorof->second
+
+-> unordered_map
+
+-> multimap - it will store repeated key elements 
+
+-> pairs- as same as of map.
+
+
+
+
+
+
+
+/*
+#include<bits/stdc++.h>
+using namespace std;
+void swap(int *x, int *y)
+{
+    int temp = *x;
+    *x = *y;
+    *y = temp;
+}
+int main()
+{
+     int x;
+     cin>>x;
+     vector<int>vec1;
+     for(int i=0;i<x;i++)
+     {
+          int ele;
+          cin>>ele;
+          vec1.emplace_back(ele);
+     }
+     auto it=vec1.rbegin();
+     while(it!=vec1.rend())
+     {
+          if(it>it+1)
+          {
+               swap(it,it+1);
+          }
+     }
+
+}
+*/
+
+ 
