@@ -83,16 +83,7 @@ int main()
    mp1.emplace("raj",1);
    mp1.emplace("raj",2);
    
-}
-
-
-// Map Traversing using begin() and end()
-
-//#include <bits/stdc++.h>
-//using namespace std;
-//
-//int main()
-//{
+   // Map Traversing using begin() and end()
 //    int arr[] = { 1, 1, 2, 1, 1, 3, 4, 3 };
 //    int n = sizeof(arr) / sizeof(arr[0]);
 //
@@ -102,7 +93,8 @@ int main()
 //
 //    cout << " Element Frequency" << endl;
 //    for (auto i = m.begin(); i != m.end(); i++)
-//        cout << i->first << "      " << i->second
-//             << endl;
-//
-//    return 0;
+//        cout << i->first << "      " << i->second<< endl;
+
+
+   return 0;
+}
