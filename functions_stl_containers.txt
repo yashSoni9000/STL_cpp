@@ -76,6 +76,10 @@
 
 -> pairs- as same as of map.
 
+->you can also assign lowest or highest integer type values to a integer variable with following code:
+-> int min=INT_MIN; //gives the minimum elemnet of integer
+-> or
+-> int max=INT_MAX; //gives the maximum elemnet of integer
 
 
 
